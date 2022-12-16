@@ -1,0 +1,12 @@
+$sizes: (
+    sm: 16,
+    md: 24,
+    lg: 32
+);
+
+@each $name, $size in $sizes {
+    .feather-#{$name} {
+        width: #{$size}px;
+        height: #{$size}px;
+    }
+}

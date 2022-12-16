@@ -1,5 +1,10 @@
 window._ = require('lodash');
 
+window.bootstrap = require('bootstrap');
+window.document.addEventListener('DOMContentLoaded', function () {
+    const toastElList = [].slice.call(window.document.querySelectorAll('.toast'));
+    toastElList.map((v) => new bootstrap.Toast(v).show());
+})
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

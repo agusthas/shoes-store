@@ -1,0 +1,35 @@
+// Bootstrap
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$enable-rounded: false;
+$toast-background-color: rgba(#fff, 1);
+
+@import 'bootstrap/scss/bootstrap';
+
+.btn-black {
+    @include button-variant(
+        $background: $black,
+        $border: $black,
+        $hover-background: $white,
+    );
+
+    font-weight: 700 !important;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: rgba($light, .8);
+}
+
+.product-card {
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $secondary;
+    }
+}
