@@ -8,7 +8,7 @@
                     <h1 class="m-0 p-0 lh-1 fw-bold fs-4 text-uppercase">Login</h1>
                     <hr>
                     <small class="text-muted mb-3">If you have an account, login with your email address.</small>
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('login.authenticate') }}">
                         @csrf
 
                         <div class="mb-3">

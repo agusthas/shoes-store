@@ -8,7 +8,7 @@
                     <h1 class="m-0 p-0 lh-1 fw-bold fs-4 text-uppercase">Create Account</h1>
                     <hr>
                     <small class="text-muted mb-3">Create a new account to be able to buy our shoes :)</small>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register.store') }}">
                         @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">{{ __('Name') }}</label>
