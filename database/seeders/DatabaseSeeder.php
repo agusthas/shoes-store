@@ -20,11 +20,8 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             StyleSeeder::class,
             SizeSeeder::class,
+            ShoeSeeder::class
         ];
-
-        if (App::environment('local')) {
-            $seeders[] = ShoeSeeder::class;
-        }
         $this->call($seeders);
     }
 }
